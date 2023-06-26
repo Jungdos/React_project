@@ -1,0 +1,249 @@
+import React, { Component, useEffect } from 'react';
+import visualBox from "./components/visualBox";
+import visualBox from "./components/u";
+import 'swiper/swiper.min.css';
+
+
+import './App.css';
+
+  function gongsacok() {
+
+  return (
+    <div className="App">
+      <div>
+        <div className="visualBox">
+          <div className="visualContainer">
+            <img src="/images/promotion_gongsacoklogo.png" className="visualBox_coklogo centerClass" alt="공사콕" />
+            <div className="visualBox_contentWrap">
+              <img src="/images/promotion_moblie.png" alt="공사콕 어플 메인 화면 이미지" className="visualBox_moblie" />
+              <div className="visualBox_texttWrap">
+                <div className="visualBox_spanWrap">
+                  <span className="font_content2">
+                    <span style={{ display: 'block' }}>오프라인 <span className="color_black_text">공사 </span>현장에서 발생되는</span>
+                    <span className="font_content2">업무를 온라인에서 <span className="color_black_text">콕</span></span>
+                  </span>
+                  <span className="font_content2">" 공사관련 매칭 O2O 플랫폼 "</span>
+                  <span className="font_content3">APP 에서 간단하게 <span className="color_black_text"> 비교견적</span> 을 받아보세요</span>
+                </div>
+                <div className="visualBox_buttonWrap">
+                  <a className="font_button" href="/grandopen">
+                    <img src="/images/promotion_googlepalystorelogo.svg" alt="공사콕 안드로이드 버전 다운로드" />공사콕 안드로이드 다운로드
+                  </a>
+                  <a className="font_button" href="/grandopen">
+                    <img src="/images/promotion_appstorelogo.png" alt="공사콕 아이폰 버전 다운로드" />공사콕 아이폰 다운로드
+                  </a>
+                </div>
+                <div className="visualBox_buttonWrap">
+                  <a className="font_button" href="/grandopen" style={{ backgroundColor: 'white', color: 'black' }}>공사콕 회원 가입하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="userMentionBox">
+          <div className="userMentionContainer">
+            <img src="/images/promition_userMentionBox_gongsaHuman.png" alt="공사하는 남자 일러스트" className="centerClass" />
+            <span className="font_content1">
+              <span>어렵고 복잡한 공사계획 때문에</span>
+              <span> 고민이 많았다면?</span>
+            </span>
+            <div className="mentionContent_Wrap" style={{ marginTop: '50px' }}>
+              <div className="mentionContent">
+                <img src="/images/promition_userMentionBox_usericon.png" alt="회원" />
+                <span>필요한 공사는 있는데 어떻게 진행해야 할지 모르겠어요!</span>
+              </div>
+              <div className="mentionContent">
+              <img src="/images/promition_userMentionBox_usericon.png" alt="회원" />
+                <span>우리집 근처의 실력있는 업체를 알고 싶어요!</span>
+              </div>
+              <div className="mentionContent">
+              <img src="/images/promition_userMentionBox_usericon.png" alt="회원" />
+                <span>광고가 아닌 실제 사용자의 리뷰를 확인하고 싶어요!</span>
+              </div>
+              <div className="mentionContent">
+              <img src="/images/promition_userMentionBox_usericon.png" alt="회원" />
+                <span>한옥을 짓고 싶은데 정보가 너무 적어요!</span>
+              </div>
+              <div className="mentionContent">
+              <img src="/images/promition_userMentionBox_usericon.png" alt="회원" />
+                <span>제 사업과 관련있는 업종의 다른 업체를 알고 싶어요!</span>
+              </div>
+            </div>
+            <div className="font_content2" style={{ textAlign: 'center', marginTop: '50px' }}>오늘부터 <span className="color_yellow_text">공사</span> 관련 업무는 온라인에서 <span className="color_yellow_text">콕</span></div>
+          </div>
+        </div>
+        <div className="PromotionAppScreenSliderBox box">
+          <span className="font_content1 color_coral_text" style={{ display: 'block' }}>공사에 대한 고민을 함께합니다.</span>
+          <div className="PromotionAppScreenSliderContainer">
+            <div className="swiper swiper-initialized swiper-horizontal swiper-backface-hidden" loopadditionalslides="1">
+              <div className="swiper-wrapper" style={{ transitionDuration: '0ms', transform: 'translate3d(-166.667px, 0px, 0px)' }}>
+                <div className="swiper-slide" data-swiper-slide-index="0" style={{ width: '146.667px', marginRight: '20px' }}>
+                  <img src="/images/promotion_appScreen_slide3.gif" alt="이용자 리뷰" />
+                  <span className="font_content3">이용자 리뷰</span>
+                </div>
+
+                <div className="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style={{ width: '146.667px', marginRight: '20px' }}>
+                  <img src="/images/promotion_appScreen_slide1.jpg" alt="견적의뢰서 작성" />
+                  <span className="font_content3">견적의뢰서 작성</span>
+                </div>
+
+                <div className="swiper-slide" data-swiper-slide-index="2" style={{ width: '146.667px', marginRight: '20px' }}>
+                  <img src="/images/promotion_appScreen_slide2.gif" alt="견적서 받기" />
+                  <span className="font_content3">견적서 받기</span>
+                </div>
+
+              </div>
+              <div className="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal">
+                <span className="swiper-pagination-current">5</span> / <span className="swiper-pagination-total">5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="marginBottomBox">
+          <div className="PromotiongpsContainer">
+            <div className="font_content1 color_green_text" style={{ textAlign: 'center' }}>원하시는 공사를 연결해드려요.</div>
+            <div className="gpsBoximgWrap">
+              <img src="/images/promotion_gpsBox_img.png" className="centerClass"/>
+            </div>
+          </div>
+          <div className="font_content3 GpsBoxtextWrap">
+            <span>원하시는 공사를 검색하면</span>
+            <span>현재 위치를 파악하여 업체를 확인할 수 있으며</span>
+            <span>정해진 견적 프로세스를 통해</span>
+            <span>쉽고 간단하게 시공이 가능합니다.</span>
+          </div>
+        </div>
+        <div className="BusinessLinkBox box">
+          <div className="font_content1" style={{ textAlign: 'center' }}>공사콕 <span style={{ color: '#41B2A5' }}>B2C</span> · <span style={{ color: '#B53BFD' }}>B2B</span> 비전</div>
+          <div className="font_content3">
+            <span>축적된 10만명의 사업자 회원 데이터</span>
+            <span>한옥 건축 문화를 온라인으로 매칭, 연결하는 <span style={{ color: '#F48B84', display: 'inline-block' }}>K한문화 플랫폼</span></span>
+            <span>비지니스 회원과 함께 신뢰로 사업을 같이 공유합니다.</span>
+          </div>
+          <div className="img">
+            {/* <span className="blind">핸드폰 위에 지도가 올라가 있는 이미지</span> */}
+          </div>
+          <div className="visualBox_buttonWrap">
+            <button className="font_button" style={{ backgroundColor: '#333333', color: 'white' }}>1577-7942</button>
+            <a className="font_button" href="/grandopen" style={{ backgroundColor: 'white', color: '#333333' }}>가맹점 등록 신청하기</a>
+          </div>
+        </div>
+        <div className="FaqBox box">
+          <div className="font_content1 color_green_text headTitle" style={{ textAlign: 'center' }}>FAQ</div>
+          <div>
+            <div className="contentWrap">
+              <div className="titleText">
+              <img src="images/promition_qna_qicon.png" alt="질문 아이콘" />
+                <span className="font_content2">B2C 서비스와 B2B 서비스의 차이는 무엇인가요?</span>
+              </div>
+            </div>
+            <div className="contentWrap">
+              <div className="titleText">
+              <img src="images/promition_qna_qicon.png" alt="질문 아이콘" />
+                <span className="font_content2">견적의뢰서 작성은 어떻게 하나요?</span>
+              </div>
+            </div>
+            <div className="contentWrap">
+              <div className="titleText">
+              <img src="images/promition_qna_qicon.png" alt="질문 아이콘" />
+                <span className="font_content2">견적서는 어떻게 확인하나요?</span>
+              </div>
+            </div>
+            <div className="contentWrap">
+              <div className="titleText">
+              <img src="images/promition_qna_qicon.png" alt="질문 아이콘" />
+                <span className="font_content2">견적의뢰서 및 견적서는 각각 몇개까지 받아볼 수 있나요?</span>
+              </div>
+            </div>
+            <div className="contentWrap">
+              <div className="titleText">
+                <img src="images/promition_qna_qicon.png" alt="질문 아이콘" />
+                <span className="font_content2">업체 등록 가맹점은 어떻게 신청하나요?</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="PromotionAppScreenSliderBox box">
+          <span className="font_content1 color_coral_text" style={{ display: 'block' }}>공사콕 인증서</span>
+          <div className="PromotionAppScreenSliderContainer">
+            <div className="swiper swiper-initialized swiper-horizontal swiper-backface-hidden" loopadditionalslides="1">
+              <div className="swiper-wrapper" style={{ transitionDuration: '0ms', transform: 'translate3d(-166.667px, 0px, 0px)' }}>
+                <div className="swiper-slide" data-swiper-slide-index="0" style={{ width: '146.667px', marginRight: '20px' }}>
+                  <img src="images/certificationBox_1.jpg" alt="[object Object]" />
+                  <span className="font_content3 sliderText">
+                    <span>
+                      <span>벤처기업</span>
+                      <span>확인서</span>
+                    </span>
+                  </span>
+                </div>
+                <div className="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style={{ width: '146.667px', marginRight: '20px' }}>
+                  <img src="images/certificationBox_2.jpg" alt="[object Object]" />
+                  <span className="font_content3 sliderText">
+                    <span>
+                      <span>AI특허증</span>
+                    </span>
+                  </span>
+                </div>
+                <div className="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style={{ width: '146.667px', marginRight: '20px' }}>
+                  <img src="images/certificationBox_3.jpg" alt="[object Object]" />
+                  <span className="font_content3 sliderText">
+                    <span>
+                      <span>네트워크 시스템</span>
+                      <span>방어 특허증</span>
+                    </span>
+                  </span>
+                </div>
+                <div className="swiper-slide swiper-slide-next" data-swiper-slide-index="3" style={{ width: '146.667px', marginRight: '20px' }}>
+                  <img src="images/certificationBox_4.jpg" alt="[object Object]" />
+                  <span className="font_content3 sliderText">
+                    <span>
+                      <span>국가 유공자</span>
+                      <span>표창 기업</span>
+                    </span>
+                  </span>
+                </div>
+                <div className="swiper-slide" data-swiper-slide-index="5" style={{ width: '146.667px', marginRight: '20px' }}>
+                  <img src="images/certificationBox_5.jpg" alt="[object Object]" />
+                  <span className="font_content3 sliderText">
+                    <span>
+                      <span>우수기업</span>
+                      <span>확인서</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div className="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal">
+                <span className="swiper-pagination-current">3</span> / <span className="swiper-pagination-total">6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="footerBox">
+          <div className="footer_logoContainer">
+            <img src="images/promotion_gongsacokcolorlogo.png" alt="공사콕 로고" />
+            <span>공사콕 gongsacok</span>
+          </div>
+          <div className="footer_textContainer">
+            <span>회사명 : 와짱 ( 주 ) | 대표이사 : 박종석 | since : 2000년 4월</span>
+            <span className="mobile_none"> | </span>
+            <span>대표전화 : 1577 - 7942 | fax : 02 - 2652 - 2700</span>
+            <span>사업자번호 : 123 - 81 - 56602 | 법인등록번호 : 134111 - *******</span>
+            <span className="mobile_none"> | </span>
+            <span>주소 : 서울시 양천구 중앙로 262번지 메디바이오플렉스빌딩 5층</span>
+          </div>
+          <span>Copyright © wazzang. All rights reserved.</span>
+          <ul>
+            <li><a href="/grandopen">공사콕 홈페이지</a></li>
+            <li><a href="https://contents.gongsacok.com/terms">이용약관</a></li>
+            <li><a href="https://contents.gongsacok.com/privacy">개인정보취급방침</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
+export default gongsacok;
