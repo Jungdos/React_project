@@ -26,15 +26,7 @@ const App = () => {
   return (
     <PageLoad url='http://api.example.com/data'>
       <div className="App">
-        <h2 className='h2_Title' 
-        style={ { 
-          textAlign: 'center',
-          fontSize: '3rem',
-          fontWeight: 'bold',
-          color: 'orange',
-                    }}>
-              Github_Practice
-        </h2>
+        <Title/>
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />}></Route>

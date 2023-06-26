@@ -6,3 +6,4 @@ export { default as BusinessLinkBox } from './BusinessLinkBox';
 export { default as FaqBox } from './FaqBox';
 export { default as PromotionAppScreenSliderBox_02 } from './PromotionAppScreenSliderBox_02';
 export { default as FooterBox } from './FooterBox';
+export { default as Title} from './Title'
